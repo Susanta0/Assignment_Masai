@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GRID COFFEE WITH MEDIA QUERIES</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');    
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins', sans-serif;
+        }
+        body{
+            background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7nznuGDQ30iTPgHPKZW2u58zYvbD8_2AQyg&usqp=CAU");
+        }
+        #main{
+            width: 80%;
+            margin: auto;
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            grid-template-rows: repeat(3,1fr);
+            gap: 30px;
+            margin-top: 50px; 
+        }
+        #main>div{
+            background-color: white;
+            padding: 30px 30px;
+            display: flex;
+            flex-wrap: wrap;
+            box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+            border-radius: 10px;
+            justify-content: space-between;
+        }
+        h1{
+            font-size:20px ;
+        }
+        p{
+            font-size: 15px;
+            color: #646061; 
+            margin-top: 20px; 
+        }
+        h2{
+          
+          font-size: 20px;
+          color: darkgoldenrod; 
+        }
+        @media all and (min-width: 600px) and (max-width: 1000px){
+            #main{
+                grid-template-columns: repeat(2,1fr);
+            }
+        }
+        @media all and (max-width: 599px){
+            #main{
+                grid-template-columns: repeat(1,1fr);
+            } 
+        }
+    </style>
+</head>
+<body>
+    <div id="main">
+        <div>
+            <h1>Cappuccino</h1>
+            <h2>$49</h2>
+            <p>Usage of the Internet is becoming more common due to rapid advance.</p>
+        </div>
+        <div>
+            <h1>Americano</h1>
+            <h2>$49</h2>
+            <p>Usage of the Internet is becoming more common due to rapid advance.</p>
+        </div>
+        <div>
+            <h1>Espresso</h1>
+            <h2>$49</h2>
+            <p>Usage of the Internet is becoming more common due to rapid advance.</p>
+        </div>
+        <div>
+            <h1>Macchiato</h1>
+            <h2>$49</h2>
+            <p>Usage of the Internet is becoming more common due to rapid advance.</p>
+        </div>
+        <div>
+            <h1>Mocha</h1>
+            <h2>$49</h2>
+            <p>Usage of the Internet is becoming more common due to rapid advance.</p>
+        </div>
+        <div>
+            <h1>Coffee Latte</h1>
+            <h2>$49</h2>
+            <p>Usage of the Internet is becoming more common due to rapid advance.</p>
+        </div>
+        <div>
+            <h1>Piccolo Latte</h1>
+            <h2>$49</h2>
+            <p>Usage of the Internet is becoming more common due to rapid advance.</p>
+        </div>
+        <div>
+            <h1>Ristretto</h1>
+            <h2>$49</h2>
+            <p>Usage of the Internet is becoming more common due to rapid advance.</p>
+        </div>
+        <div>
+            <h1>Affogato</h1>
+            <h2>$49</h2>
+            <p>Usage of the Internet is becoming more common due to rapid advance.</p>
+        </div>
+    </div>
+</body>
+</html>
